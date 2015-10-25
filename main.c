@@ -19,8 +19,8 @@ int main() {
     InitializeCANBUS1();
 
     //uint8_t CANBUSTxPacket[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; /* Create CANBUS data packet */
-    //uint8_t CANBUSTxPacket[] = {0xAA, 0x55, 0xAA, 0x55, 0xAA, 0x55, 0xAA, 0x53}; /* Create CANBUS data packet */
-    uint8_t CANBUSTxPacket[] = {0x01}; /* Create CANBUS data packet */
+    uint8_t CANBUSTxPacket[] = {0xAA, 0x55, 0xAA, 0x55, 0xAA, 0x55, 0xAA, 0x53}; /* Create CANBUS data packet */
+    //uint8_t CANBUSTxPacket[] = {0x01}; /* Create CANBUS data packet */
 
     int loop = 1;
     while (loop) {
@@ -34,7 +34,7 @@ int main() {
             loop = 1;
         }
 
-        CAN1SendMessage(1, &CANBUSTxPacket[0]); // Send CAN data packet
+        CAN1SendMessage(8, &CANBUSTxPacket[0]); // Send CAN data packet
     }
 
     return 0;
