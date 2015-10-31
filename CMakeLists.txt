@@ -56,6 +56,7 @@ set(SOURCE_FILES
         STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
         STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
         STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f407xx.s
+        STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP
         )
 
 add_executable(CAN_Bus ${SOURCE_FILES})
@@ -73,5 +74,6 @@ include_directories(
         STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Inc
         STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Include
         STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+        STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP
 )
 
