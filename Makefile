@@ -4,6 +4,7 @@ OBJECTS = \
         canbus.o \
         uart.o \
         leds.o \
+        lwipopts.h \
         STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o \
         STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o \
         STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.o \
@@ -21,7 +22,19 @@ OBJECTS = \
         STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o \
         STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f407xx.o \
         STM32Cube_FW_F4_V1.9.0/Middlewares/Third_party/LwIP/src/core/def.o \
-        STM32Cube_FW_F4_V1.9.0/Middlewares/Third_party/LwIP/src/core/init.o
+        STM32Cube_FW_F4_V1.9.0/Middlewares/Third_party/LwIP/src/core/init.o \
+        STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/etharp.o \
+        STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/include/lwip/opt.o \
+        Src/lwip.o \
+        Src/ethernetif.o \
+        Src/stm32f4xx_it.o \
+        Src/stm32f4xx_hal_msp.o
+
+
+
+
+
+
 
 
 
@@ -36,7 +49,21 @@ INCLUDE_PATHS = \
     -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_party/LwIP/src/include/ipv4 \
     -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_party/LwIP/src/include/ipv6 \
     -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_party/LwIP/test/unit \
-    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_party/LwIP/system
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_party/LwIP/system \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/system \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/include \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/include/ipv4 \
+    -I./STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Inc \
+    -I./STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/system/arch \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/include/ipv4/lwip \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/include/lwip \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/include/netif \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/include/posix \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/include/posix/sys \
+    -I./STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp \
+    -I./Src \
+
 
 LINKER_SCRIPT = ./STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/STM32F407XG.ld
 
