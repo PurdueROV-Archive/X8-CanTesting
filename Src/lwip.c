@@ -34,7 +34,6 @@
 #include "lwip.h"
 #include "lwip/init.h"
 #include "lwip/netif.h"
-
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */

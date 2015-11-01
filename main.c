@@ -5,7 +5,6 @@
 
 #include "leds.h"
 #include "canbus.h"
-#include "uart.h"
 
 
 int main() {
@@ -27,7 +26,7 @@ int main() {
 
         if (loop++ % 100) {
             for (int i = 0; i < 100; i++) {
-                LedState(LED_ORANGE, 2);             //  Toggle green, every 100 messages sent.
+                LedState(LED_GREEN, 2);
             }
         } else {
             LedState(LED_GREEN, 2);             //  Toggle green, every 100 messages sent.
@@ -44,13 +43,6 @@ int main() {
 /* Interrupt handler of core SysTick */
 static int interruptCount = 0;
 
-void SysTick_Handler(void) {
-    HAL_IncTick(); /* Required for HAL */
-    if (!(interruptCount++ % 100)) {
-        LedState(LED_BLUE, 2);         //  Toggle blue.
-        interruptCount = 1;
-    }
-    return;
-}
+
 
 /* main.c */
