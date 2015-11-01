@@ -9,11 +9,17 @@
       <sourceFolder url="file://$MODULE_DIR$/leds.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/leds.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Src/ethernetif.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Src/lwip.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Src/stm32f4xx_hal_msp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Src/stm32f4xx_it.o" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f407xx.s" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/iar/startup_stm32f407xx.s" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.o" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Include/core_cm4.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h" isTestSource="false" />
@@ -43,7 +49,59 @@
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/api/api_lib.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/api/api_msg.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/api/err.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/api/netbuf.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/api/netdb.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/api/netifapi.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/api/sockets.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/api/tcpip.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/def.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/dhcp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/dns.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/init.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/ipv4/autoip.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/ipv4/icmp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/ipv4/igmp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/ipv4/inet.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/ipv4/inet_chksum.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/ipv4/ip.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/ipv4/ip_addr.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/ipv4/ip_frag.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/lwip_timers.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/mem.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/memp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/netif.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/pbuf.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/raw.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/snmp/asn1_dec.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/snmp/asn1_enc.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/snmp/mib2.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/snmp/mib_structs.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/snmp/msg_in.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/snmp/msg_out.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/stats.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/sys.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/tcp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/tcp_in.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/tcp_out.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/core/udp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/etharp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/auth.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/chap.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/chpms.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/fsm.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/ipcp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/lcp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/magic.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/md5.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/pap.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/ppp.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/ppp_oe.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/randm.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/ppp/vj.o" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP/src/netif/slipif.o" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/stm32f4xx_hal_conf.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/uart.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/uart.h" isTestSource="false" />
