@@ -75,5 +75,6 @@ include_directories(
         STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Include
         STM32Cube_FW_F4_V1.9.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
         STM32Cube_FW_F4_V1.9.0/Middlewares/Third_Party/LwIP
+        Src
 )
 
